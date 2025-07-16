@@ -14,5 +14,15 @@ export const LayoutContainer = styled.div({
         margin: "16px",
         background: "rgba(255, 255, 255, .2)",
         borderRadius: "6px",
+    },
+
+    ".header": {
+        display: "flex",
+        alignItems: "center",
+        padding: 0,
+    },
+
+    ".user-center": {
+        padding: "0 20px",
     }
 })
