@@ -20,6 +20,10 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
+      {
+        path: "*",
+        element: <div>404</div>,
+      },
     ],
   },
 
@@ -74,8 +78,6 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-
-
 ]);
 
 export default router;
