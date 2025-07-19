@@ -8,8 +8,8 @@ import Role from "@modules/System/Role";
 import Menu from "@modules/System/Menu";
 import Cache from "@modules/Monitor/cache";
 import Timing from "@modules/Monitor/timing";
-import OperationLog from "@modules/System/Logs/operation-log";
-import LoginLog from "@modules/System/Logs/login-logs";
+import OperationLog from "@modules/System/LogList/operation-log";
+import LoginLog from "@modules/System/LogList/login-logs";
 
 const router = createBrowserRouter([
   {
