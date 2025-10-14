@@ -3,7 +3,6 @@ import styled from "@emotion/styled";
 import "./App.css";
 import Home from "@modules/Home";
 
-
 const style = css`
   color: red;
 `;
@@ -23,7 +22,7 @@ function App() {
       </div>
       <Button>hello styled!</Button>
       <div css={[anotherStyle, style]}>Some text with an underline.</div>
-  <Home/>
+      <Home />
     </>
   );
 }

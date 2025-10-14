@@ -16,16 +16,13 @@ const onFinish: FormProps<FieldType>["onFinish"] = (values) => {
   console.log("Success:", values);
 };
 
-
-
 function Login() {
+  const [checked, setChecked] = useState(false);
 
-  const [checked, setChecked] = useState(false)
-
-  const onCheckboxChange: CheckboxProps['onChange'] = (e) => {
-    console.log("checked event:", e)
+  const onCheckboxChange: CheckboxProps["onChange"] = (e) => {
+    console.log("checked event:", e);
     setChecked(e.target.checked);
-  }
+  };
 
   return (
     <LoginContainer>
@@ -48,7 +45,10 @@ function Login() {
         >
           <Input.Password prefix={<LockOutlined />} placeholder="Password" />
         </Form.Item>
-        <Form.Item name="captcha" rules={[{ required: true, message: "Please input captcha!" }]}>
+        <Form.Item
+          name="captcha"
+          rules={[{ required: true, message: "Please input captcha!" }]}
+        >
           <Space direction="horizontal">
             <Input placeholder="Captche" />
             <Image
@@ -64,7 +64,9 @@ function Login() {
         <Form.Item>
           <Flex justify="space-between" align="center">
             <Form.Item name="remember" valuePropName="checked" noStyle>
-              <Checkbox checked={checked} onChange={onCheckboxChange}>Remember me</Checkbox>
+              <Checkbox checked={checked} onChange={onCheckboxChange}>
+                Remember me
+              </Checkbox>
             </Form.Item>
             <a href="">Forgot password</a>
           </Flex>
