@@ -1,6 +1,5 @@
 // improt * as CryptoJS from 'crypto-js';
 
-
 export const enCryptoAES = (text: string, key: string) => {
   return text;
   // return CryptoJS.AES.encrypt(text, key).toString();
