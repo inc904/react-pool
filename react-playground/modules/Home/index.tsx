@@ -1,4 +1,13 @@
 const Home = () => {
-  return <div>Home page</div>;
+  return (
+    <div
+      className="home"
+      style={{
+        height: "1500px",
+      }}
+    >
+      Home page
+    </div>
+  );
 };
 export default Home;
