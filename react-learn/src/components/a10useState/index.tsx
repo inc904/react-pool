@@ -1,13 +1,18 @@
 import { useState } from 'react'
 
 export default function UseStatePage() {
+  console.log('hello')
+  const cat = { name: 'tom', age: 3 }
+  const [catInfo, setCatInfo] = useState(cat)
+  console.log('catInfo ===', cat, catInfo, cat === catInfo)
   const [obj, setObj] = useState({ name: 'test', age: 10 })
   const [school, setSchool] = useState(() => {
     const _date = new Date()
-    const date = _date.getFullYear() + '-' + (_date.getMonth() + 1) + '-' + _date.getDate()
+    const date =
+      _date.getFullYear() + '-' + (_date.getMonth() + 1) + '-' + _date.getDate()
     return {
       date,
-      name: 'XingHua',
+      name: 'XingHua'
     }
   })
   const handleChangeName = () => {
