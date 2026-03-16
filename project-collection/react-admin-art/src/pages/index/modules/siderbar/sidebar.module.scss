@@ -1,0 +1,18 @@
+.artSider {
+  height: calc(100% - 56px);
+  inset-block-start: 56px !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.logo {
+  height: 32px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 32px;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+}
